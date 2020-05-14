@@ -202,8 +202,6 @@ nnoremap <down> <Nop>
 nnoremap <left> <Nop>
 nnoremap <right> <Nop>
 
-" Use jk instead of <esc> to change from insert mode to normal mode.
-inoremap <esc> <Nop>
 " }}}
 
 " vim: filetype=vim foldmethod=marker foldlevel=0
