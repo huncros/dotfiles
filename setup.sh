@@ -17,7 +17,11 @@ create_link_for() {
   fi
 }
 
+### VIM ###
+
 create_link_for ".vimrc"
+
+### GIT ###
 
 # If there is no global gitignore is set for git then use the .gitignore_global from this repo for
 # this purpose.
@@ -27,5 +31,8 @@ else
   echo "Didn't set .gitignore_global becase core.excludesfile is already set."
 fi
 
-# Make VIM the default editor for git.
+git config --global user.name "David Herskovics"
+git config --global user.username "huncros"
+git config --global user.email "huncros@gmail.com"
 git config --global core.editor "vim"
+
