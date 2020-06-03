@@ -102,9 +102,9 @@ inoremap jk <esc>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+" Use <C-N> to clear search highlights.
+if maparg('<C-N>', 'n') ==# ''
+  nnoremap <silent> <C-N> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 endif
 
 " Quicker moving between windows.
