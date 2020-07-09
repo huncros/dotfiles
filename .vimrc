@@ -82,7 +82,7 @@ set smartcase      " Enable smart-case search
 
 " Folding {{{
 set foldmethod=indent
-set foldlevel=10
+set foldlevel=99
 " Enable folding with the spacebar
 " }}}
 
