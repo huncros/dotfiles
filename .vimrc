@@ -90,6 +90,8 @@ set foldlevel=99
 augroup configs
   autocmd!
   autocmd FileType make setlocal noexpandtab
+  " Seems like the built-in python plugin overrides my global settings for indentation.
+  autocmd FileType python setlocal expandtab shiftwidth=2 softtabstop=2
 augroup END
 " }}}
 
